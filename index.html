@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المكتبة الرقمية | أ. علي التوني</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --primary-blue: #1a4a72;
+            --accent-green: #28a745;
+            --bg-gray: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header-simple {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+        
+        .files-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        /* تنسيق الكارد */
+        
+        .pdf-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            border-bottom: 5px solid transparent;
+        }
+        
+        .pdf-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pdf-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .pdf-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 10px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .price-box {
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            margin-left: 8px;
+        }
+        
+        .free-tag {
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+        
+        .action-btns {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .btn {
+            padding: 8px 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        .btn-view {
+            background: var(--primary-blue);
+            color: white;
+        }
+        
+        .btn-download {
+            background: #e9ecef;
+            color: #495057;
+        }
+        
+        .btn-view:hover {
+            opacity: 0.9;
+        }
+        /* ألوان مختلفة لكل كارد */
+        
+        .card-1 {
+            border-color: #e74c3c;
+        }
+        
+        .card-1 .pdf-icon {
+            color: #e74c3c;
+        }
+        
+        .card-2 {
+            border-color: #3498db;
+        }
+        
+        .card-2 .pdf-icon {
+            color: #3498db;
+        }
+        
+        .card-3 {
+            border-color: #2ecc71;
+        }
+        
+        .card-3 .pdf-icon {
+            color: #2ecc71;
+        }
+        
+        .card-4 {
+            border-color: #f1c40f;
+        }
+        
+        .card-4 .pdf-icon {
+            color: #f1c40f;
+        }
+        
+        .card-5 {
+            border-color: #9b59b6;
+        }
+        
+        .card-5 .pdf-icon {
+            color: #9b59b6;
+        }
+        
+        .card-6 {
+            border-color: #e67e22;
+        }
+        
+        .card-6 .pdf-icon {
+            color: #e67e22;
+        }
+        
+        .card-7 {
+            border-color: #1abc9c;
+        }
+        
+        .card-7 .pdf-icon {
+            color: #1abc9c;
+        }
+        
+        .card-8 {
+            border-color: #34495e;
+        }
+        
+        .card-8 .pdf-icon {
+            color: #34495e;
+        }
+        
+        .card-9 {
+            border-color: #ff9f43;
+        }
+        
+        .card-9 .pdf-icon {
+            color: #ff9f43;
+        }
+        
+        .card-10 {
+            border-color: #ee5253;
+        }
+        
+        .card-10 .pdf-icon {
+            color: #ee5253;
+        }
+        
+        .back-home {
+            margin-top: 20px;
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border: 1px solid white;
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header-simple">
+        <h1>الملفات والكتب التعليمية</h1>
+        <p>كل ما تحتاجه من مذكرات وكتب في مكان واحد</p>
+        <a href="Ali tony.html" class="back-home">العودة للرئيسية</a>
+    </header>
+
+    <div class="container">
+        <div class="files-grid">
+
+            <div class="pdf-card card-1">
+                <span class="pdf-icon">📄</span>
+                <div class="pdf-title">ملخص النسر في الكسور الجزئيه للفرقه الاولي </div>
+                <div class="price-box"><span class="old-price">10 ج</span> <span class="free-tag">مجانًا</span></div>
+                <div class="action-btns">
+                    <a href="تلخيصات أ علي التوني/ملخص النسر لتحطيم الكسر اعداد علي التوني .pdf" target="_blank" class="btn btn-view">عرض</a>
+                    <a href="files/file1.pdf" download class="btn btn-download">تحميل</a>
+                </div>
+            </div>
+
+            <div class="pdf-card card-2">
+                <span class="pdf-icon">📚</span>
+                <div class="pdf-title">تلخيص العقيده للفرقه الاولي ترم تاني </div>
+                <div class="price-box"><span class="old-price">5 ج</span> <span class="free-tag">مجانًا</span></div>
+                <div class="action-btns">
+                    <a href="تلخيصات أ علي التوني/مسلمون في العقيدة والأخلاق.pdf" class="btn btn-view">عرض</a>
+                    <a href="#" class="btn btn-download">تحميل</a>
+                </div>
+            </div>
+
+            <div class="pdf-card card-3">
+                <span class="pdf-icon">📝</span>
+                <div class="pdf-title">تلخيص العلوم التربويه</div>
+                <div class="price-box"><span class="old-price">15 ج</span> <span class="free-tag">مجانًا</span></div>
+                <div class="action-btns">
+                    <a href="تلخيصات أ علي التوني/علوم تربويه الجزء الخاص ب د.  محمد صديق 2025M . G ط. ك.pdf" class="btn btn-view">عرض</a>
+                    <a href="#" class="btn btn-download">تحميل</a>
+                </div>
+            </div>
+
+            <div class="pdf-card card-4"><span class="pdf-icon">🧪</span>
+                <div class="pdf-title">ملخص ام عباير لجلب التقدير في الفقه للفرقه الاولي </div>
+                <div class="price-box"><span class="free-tag">مجانًا</span></div>
+                <div class="action-btns"><a href="تلخيصات أ علي التوني/ام عبير لجلب التقدير.pdf" class="btn btn-view">عرض</a><a href="#" class="btn btn-download">تحميل</a></div>
+            </div>
+            <div class="pdf-card card-5"><span class="pdf-icon">🔍</span>
+                <div class="pdf-title">ملخص ام اماني لتجنب الدور التاني في العقيده للفرقه الاولي </div>
+                <div class="price-box"><span class="free-tag">مجانًا</span></div>
+                <div class="action-btns"><a href="تلخيصات أ علي التوني/ام اماني لتجنب الدور التاني .pdf" class="btn btn-view">عرض</a><a href="#" class="btn btn-download">تحميل</a></div>
+            </div>
+            <div class="pdf-card card-6"><span class="pdf-icon">🧬</span>
+                <div class="pdf-title">تلخيص العقيده للفرقه الاولي </div>
+                <div class="price-box"><span class="free-tag">مجانًا</span></div>
+                <div class="action-btns"><a href="تلخيصات أ علي التوني/ام ريم معها الامتياز شئ اكيد مش تخمين2025.pdf" class="btn btn-view">عرض</a><a href="#" class="btn btn-download">تحميل</a></div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
